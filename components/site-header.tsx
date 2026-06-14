@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function SiteHeader() {
   return (
     <header className="border-b border-slate-200 bg-white">
@@ -10,13 +12,17 @@ export function SiteHeader() {
         </div>
 
         <nav className="flex items-center gap-4 text-sm font-medium">
-          <a className="text-slate-700 hover:text-violet-700" href="/">
+          <Link className="text-slate-700 hover:text-violet-700" href="/">
             Home
-          </a>
+          </Link>
+
+          <Link className="text-slate-700 hover:text-violet-700" href="/jobs">
+            Jobs
+          </Link>
 
           <a
             className="text-slate-700 hover:text-violet-700"
-            href="#features"
+            href="/#features"
           >
             Features
           </a>
